@@ -4,7 +4,7 @@ import sqlite3
 ## Main Root Window Declaration
 root=Tk()
 root.title("PhoneBook")
-root.geometry("750x750")
+root.geometry("700x700")
 root.configure(background="#FFFAFA")
 ## SQLite3 Database Connection and Table Creation
 con=sqlite3.Connection("PhoneBook")
