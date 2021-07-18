@@ -4,7 +4,7 @@ import sqlite3
 ## Main Root Window Declaration
 root=Tk()
 root.title("PhoneBook")
-root.geometry("700x700")
+root.geometry("750x750")
 root.configure(background="#FFFAFA")
 ## SQLite3 Database Connection and Table Creation
 con=sqlite3.Connection("PhoneBook")
@@ -170,7 +170,7 @@ def search():
         global tempd,tempn,tempe,conid
         eroot=Tk()
         eroot.title("Edit PhoneBook")
-        eroot.geometry("700x700")
+        eroot.geometry("750x750")
         eroot.configure(background="#9F000F")
         cur.execute("SELECT * FROM CONTACTDETAILS WHERE CONTACTID=?",(conid,))
         tempd=cur.fetchall()
